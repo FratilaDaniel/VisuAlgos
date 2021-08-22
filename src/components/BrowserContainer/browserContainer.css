@@ -1,0 +1,43 @@
+#browser-container{
+    background-color: rgba(125, 125, 125, 0.4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    z-index: 4;
+}
+
+#browser-content{
+    height: 100%;
+    width: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+#browser-content-expanded{
+    height: 100%;
+    flex: 1;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+#sidebar-toggle-i{
+    display: none;
+}
+
+#sidebar-toggle-l{
+    padding: 5px;
+    font-size: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-left: 2px solid rgba(0, 0, 0, 0.5)
+}
+
+#sidebar-toggle-i:checked ~ #browser-content{
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in;
+}

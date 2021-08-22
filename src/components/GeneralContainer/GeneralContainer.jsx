@@ -1,9 +1,11 @@
 import "./generalContainer.css";
+import BrowserContainer from "../BrowserContainer/BrowserContainer";
 
 function GeneralContainer(){
     return (
         <section>
-            this is general container
+            <BrowserContainer/>
+            {/* this is general container */}
         </section>
     );
 }
