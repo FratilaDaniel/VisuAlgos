@@ -68,7 +68,7 @@ nav ul a:hover, nav ul a:focus{
         transform: scaleX(0);
     }
 
-    nav ul li:hover::after{
+    nav ul li:hover::after, nav ul li:focus::after{
         transform: scaleX(1);
         transition: transform 0.5s ease-in-out;
     }
